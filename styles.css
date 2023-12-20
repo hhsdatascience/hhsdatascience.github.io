@@ -107,3 +107,38 @@ footer {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
  
+/* Add this CSS for scroll animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+/* Add this CSS for fancy buttons */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #b10dc9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #6b0975;
+}
