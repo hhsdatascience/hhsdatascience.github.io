@@ -1,24 +1,17 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    background-color: #001f3f;
+    color: #fff;
 }
 
 header {
-    background-color: #333;
+    background-color: #001f3f;
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.5em;
+    position: relative;
 }
 
 nav ul {
@@ -35,52 +28,81 @@ nav ul li {
 a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #ffd700;
+    color: #b10dc9;
 }
 
 section {
-    margin: 80px 20px;
+    margin: 20px;
 }
 
-h2 {
-    color: #333;
+#home {
+    text-align: center;
+    padding: 50px;
+}
+
+#home h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #b10dc9;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+#about, #projects, #join {
+    text-align: center;
+    padding: 50px;
+}
+
+#about h2, #projects h2, #join h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #b10dc9;
+}
+
+#about p, #projects ul, #join p {
+    font-size: 1.2em;
 }
 
 footer {
-    background-color: #333;
+    background-color: #001f3f;
     color: #fff;
     text-align: center;
     padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Animations */
-@keyframes fadeInUp {
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
-section {
-    animation: fadeInUp 1s ease;
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-    header {
-        padding: 15px;
-    }
+/* Graphics */
+#home img {
+    max-width: 100%;
+    height: auto;
+}
 
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
+#projects img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
