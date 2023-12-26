@@ -38,7 +38,7 @@ nav li a:after {
   bottom: 8px;
   height: 2px;
   width: 0;
-  background-color: #9f00ff;
+  background-color: #8860FC;
   /* Neon Purple */
   transition: width 0.3s ease, left 0.3s ease;
 }
