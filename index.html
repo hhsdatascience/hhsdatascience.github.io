@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Data Science Club</title>
-</head>
-<body>
+  </head>
 
-   <header>
-    <h1>Data Science Club</h1>
+  <body>
+
+    <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="index.html" class="button">Home</a></li>
-            <li><a href="about.html" class="button">About</a></li>
-            <li><a href="projects.html" class="button">Projects</a></li>
-            <li><a href="join.html" class="button">Join</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="resources.html">Resources</a>
+          <div class="dropdown-content">
+            <a href="courses.html">Courses</a>
+            <a href="opportunities.html">Opportunities</a>
+            <a href="templates.html">Code Templates</a>
+          </div>
+        </li>
+        <li><a href="slides.html">Past Slides</a></li>
+      </ul>
     </nav>
-</header>
 
-  <section id="home" class="fadeIn scroll-animation">
-    <h2>Welcome to the Data Science Club!</h2>
-    <p>Explore our activities and join us in the exciting world of data science.</p>
-    <img src="home-image.jpg" alt="Data Science Club">
-  </section>
-    
-    <footer>
-        <p>&copy; 2023 Data Science Club</p>
-    </footer>
+    <!-- Home Page -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Data Science Club</h1>
+        <!-- Add other content as needed -->
+      </div>
+      <div class="hero-image"></div>
+    </section>
 
-</body>
+    <section id="about">
+      <div class="about-us-content">
+        <h2>About Us</h2>
+        <p>Welcome to the Data Science Club! We are a passionate community of data enthusiasts dedicated to exploring the exciting world of data science. Our mission is to...</p>
+        <a href="#about" class="button">Learn More</a>
+      </div>
+    </section>
 
-    
+    <section id="contact">
+      <!-- Contact and Social Media Section -->
+    </section>
 
-    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="app.js"></script>
+  </body>
+
 </html>
