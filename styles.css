@@ -1,6 +1,5 @@
 body {
-  background-color: #001f3f;
-  /* Dark Navy */
+  background-color: #08092A;
   color: white;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -85,7 +84,7 @@ nav li a:hover:after {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #000e1a;
+  background-color: #08092A;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
