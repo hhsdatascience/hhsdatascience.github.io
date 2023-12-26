@@ -1,170 +1,94 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #001f3f;
-    color: #fff;
+  background-color: #001f3f;
+  /* Dark Navy */
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #001f3f;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    position: relative;
+nav {
+  background-color: #000e1a;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+  /* Added this line */
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease-in-out;
+nav li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  height: 2px;
+  width: 0;
+  background-color: #9f00ff;
+  /* Neon Purple */
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
-a:hover {
-    color: #b10dc9;
+nav li a:hover:after {
+  width: 80%;
+  left: 10%;
 }
 
-section {
-    margin: 20px;
-}
-
-#home {
-    text-align: center;
-    padding: 50px;
-}
-
-#home h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #b10dc9;
-}
-
-#home p {
-    font-size: 1.2em;
-}
-
-#about, #projects, #join {
-    text-align: center;
-    padding: 50px;
-}
-
-#about h2, #projects h2, #join h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #b10dc9;
-}
-
-#about p, #projects ul, #join p {
-    font-size: 1.2em;
-}
-
-footer {
-    background-color: #001f3f;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Graphics */
-#home img {
-    max-width: 100%;
-    height: auto;
-}
-
-#projects img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
- 
-/* Add this CSS for scroll animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.scroll-animation {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s forwards;
-}
-
-/* Add this CSS for fancy buttons */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: #b10dc9;
-    transition: background-color 0.3s ease-in-out;
-}
-
-.button:hover {
-    background-color: #6b0975;
-}
-
-/* Dropdown styles */
 .dropdown {
-    position: relative;
-    display: inline-block;
+  display: inline-block;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  background: url('your-image.jpg') center/cover no-repeat;
+  /* Replace 'your-image.jpg' with your image path */
+  height: 400px;
+  /* Adjust the height as needed */
+}
+
+/* Add more styling for other sections as needed */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000e1a;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
