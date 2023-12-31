@@ -27,7 +27,6 @@ nav li a {
   padding: 14px 16px;
   text-decoration: none;
   position: relative;
-  /* Added this line */
 }
 
 nav li a:after {
@@ -58,6 +57,7 @@ nav li a:hover:after {
   padding: 12px 16px;
   display: block;
   text-decoration: none;
+  background-color: #08092A
 }
 
 
