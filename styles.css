@@ -5,6 +5,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.logo img {
+    height: 40px; /* Adjust the height of the logo as needed */
+    margin-right: 20px; /* Add some space between the logo and navigation links */
+}
 nav {
   background-color: #000e1a;
   overflow: hidden;
