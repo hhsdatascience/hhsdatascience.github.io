@@ -14,6 +14,21 @@ nav {
   overflow: hidden;
   display: flex;
   text-align: center;
+  align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px; /* Add some space between navigation links */
 }
 
 nav ul {
